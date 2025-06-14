@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upwork | The World's Work Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #37a12f 0%, #2d9fd8 100%);
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link:hover {
+            color: #37a12f;
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .talent-link:hover {
+            color: #2d9fd8;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold text-green-600">upwork</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="nav-link text-gray-600 hover:text-green-600">Find Talent</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-green-600">Find Work</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-green-600">Why Upwork</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-green-600">Enterprise</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:block relative">
+                    <input type="text" placeholder="Search" class="pl-10 pr-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+                <a href="#" class="text-gray-600 hover:text-green-600">Log In</a>
+                <a href="#" class="btn-primary bg-green-600 text-white px-4 py-2 rounded-md">Sign Up</a>
+            </div>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Up your work game</h1>
+                <div class="flex items-center mb-8">
+                    <div class="mr-4">
+                        <i class="fas fa-check-circle text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">No cost to join</h3>
+                        <p class="text-gray-100">Browse professionals, fixed-price projects, or even book a consultation.</p>
+                    </div>
+                </div>
+                <div class="flex items-center mb-8">
+                    <div class="mr-4">
+                        <i class="fas fa-search-dollar text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Post a job and hire top talent</h3>
+                        <p class="text-gray-100">Finding talent doesn't have to be a chore. Post a job or we can search for you!</p>
+                    </div>
+                </div>
+                <div class="flex items-center mb-8">
+                    <div class="mr-4">
+                        <i class="fas fa-star text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Afford to work with the best</h3>
+                        <p class="text-gray-100">It's affordable to up your work game with low transaction rates on top talent.</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="btn-primary bg-white text-green-600 px-6 py-3 rounded-md font-semibold">Find Talent</a>
+                    <a href="#" class="btn-primary bg-transparent border-2 border-white px-6 py-3 rounded-md font-semibold">Find Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="upwork.jpeg" alt="Upwork professionals" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- For Clients Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">For clients</h2>
+                <h3 class="text-2xl text-gray-600">Find talent your way</h3>
+                <p class="text-gray-500 max-w-2xl mx-auto mt-4">
+                    Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="category-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-briefcase text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Post a job and hire a pro</h3>
+                    <p class="text-gray-600 mb-4">Tell us what you need. We'll find the right talent for your project.</p>
+                    <a href="#" class="text-green-600 font-semibold">Find talent <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                <div class="category-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shopping-bag text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Browse and buy projects</h3>
+                    <p class="text-gray-600 mb-4">Purchase ready-made projects from our talent marketplace.</p>
+                    <a href="#" class="text-blue-600 font-semibold">Browse projects <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                <div class="category-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-headset text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Let us help you find talent</h3>
+                    <p class="text-gray-600 mb-4">Our talent specialists can help you find the best talent for your business.</p>
+                    <a href="#" class="text-purple-600 font-semibold">Get help <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Trusted by leading brands and startups</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-12">
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">Microsoft</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">Airbnb</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">Google</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">Automatic</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">Bissell</span>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg flex items-center justify-center">
+                    <span class="font-semibold text-gray-700">GoDaddy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Categories -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Browse talent by category</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-gray-700">Popular skills</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Generative AI Specialists</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Data Entry Specialists</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Video Editors</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Data Analyst</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Shopify Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Ruby on Rails Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Android Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Bookkeeper</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Content Writer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Copywriter</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Data Scientist</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Front-End Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Game Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Graphic Designer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">iOS Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Java Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">JavaScript Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Logo Designer</a>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-gray-700">Development & IT</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Mobile App Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">PHP Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Python Developer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">React.js</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Node.js</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Vue.js</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Blockchain</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Go development</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">HTML5 Developers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Full Stack Developers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">React Native Developers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Back End Developers</a>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-gray-700">Design & Creative</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">UI Designer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">UX Designer</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Illustrators</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Videographers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Stable Diffusion Artists</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Fashion Designers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Product Photographers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Photo Editors</a>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold mb-4 text-gray-700">Business Services</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Virtual Assistant</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Business Consultants</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">HR consulting</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Project Managers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Accountants</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Tax Preparers</a>
+                    <a href="#" class="talent-link text-gray-700 hover:text-blue-600">Business Coaches</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-primary bg-green-600 text-white px-8 py-3 rounded-md font-semibold">Browse all categories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Browse services</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">AI Services</h3>
+                    <div class="space-y-3">
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Generative AI Services</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Prompt Engineering</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">AI Content Creators</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">ChatGPT Specialists</a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Marketing</h3>
+                    <div class="space-y-3">
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">SEO Services</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Social Media Management</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Email Marketing</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Influencer Marketing</a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Writing & Translation</h3>
+                    <div class="space-y-3">
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Resume Writing</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Translation Services</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Ghostwriters</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Technical Writing</a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-700">Design & Video</h3>
+                    <div class="space-y-3">
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Logo Design</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Video Editing</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Architecture/Interior Design</a>
+                        <a href="#" class="block talent-link text-gray-700 hover:text-blue-600">Podcast Editing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to up your work game?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join millions of professionals using Upwork to grow their businesses.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="btn-primary bg-white text-green-600 px-8 py-3 rounded-md font-semibold">Get Started</a>
+                <a href="#" class="btn-primary bg-transparent border-2 border-white px-8 py-3 rounded-md font-semibold">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">For Clients</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">How to Hire</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Talent Marketplace</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Project Catalog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Hire an Agency</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">For Talent</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">How to Find Work</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Direct Contracts</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Find Freelance Jobs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help & Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Success Stories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Upwork Reviews</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Leadership</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Investor Relations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex space-x-6 mb-4 md:mb-0">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Accessibility</a>
+                    </div>
+                    <div class="text-gray-400 text-sm">
+                        © 2023 Upwork Inc.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-16');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('p-4');
+                navLinks.classList.toggle('shadow-md');
+                navLinks.classList.toggle('space-y-4');
+            });
+        });
+    </script>
+</body>
+</html>
