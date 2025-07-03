@@ -1,7 +1,5 @@
 # Upwork-Clone-Assignment-9
-# Ayan-Portfolio-786
 
-# Assignment-7
 <h1 align="center">Hi 👋, I'm Ayan Shahid</h1>
 <h3 align="center">A passionate Front-End Web Developer from Pakistan</h3>
 
